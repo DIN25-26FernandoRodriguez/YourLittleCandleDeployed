@@ -1,33 +1,39 @@
-
-import Contenedor from './Contenedor'
-import Interprete from './Interprete'
+import Contenedor from './Componentes/Contenedor.jsx'
+import Articulo from './Articulo.jsx'
+import Header from './Componentes/Header.jsx'
+import ListarProductos from './listaDeProductos.jsx'  
+import { Routes } from "react-router-dom"
+import { Route } from "react-router-dom"
+import Inicio from './Inicio.jsx'
+import Admin from './Admin.jsx'
+import Footer from './Componentes/Footer.jsx'
+import DetalleProducto from './DetalleProducto.jsx'
+import ScrollToTop from './Componentes/ScrollToTop.jsx'
+import Contacto from './WorkInProgress.jsx'
+import WorkInProgress from './WorkInProgress.jsx'
 
 function App() {
-
   return (
     <>
-      <h1 className="contenedor__h1 items-center text-center">Mis Intérpretes</h1>  
-      <p className="[font-family:'Helvetica-Bold',Helvetica] font-bold text-color-primary text-2xl tracking-[0] leading-[normal] whitespace-nowrap items-center text-center pt-2">Lista de interpretes disponibles:</p>
-<Contenedor>
-  <div className="flex justify-center items-center roun pt-6">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-      <Interprete className="interpretes" nombre="Marlon Brando" foto="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/270px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png">
-        Marlon Brando fue un influyente actor estadounidense...
-      </Interprete>
-      <Interprete className="interpretes" nombre="Al Pacino" foto="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Al_Pacino.jpg/220px-Al_Pacino.jpg">
-        Al Pacino es un actor y director de cine estadounidense...
-      </Interprete>
-      <Interprete className="interpretes" nombre="Marlon Brando" foto="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/270px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png">
-        Marlon Brando fue un influyente actor estadounidense...
-      </Interprete>
-      <Interprete className="interpretes" nombre="Al Pacino" foto="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Al_Pacino.jpg/220px-Al_Pacino.jpg">
-        Al Pacino es un actor y director de cine estadounidense...
-      </Interprete>
-    </div>
-  </div>
-</Contenedor>
+      <Header/>
+       {/*  Aquí va el header */}
+      <Contenedor>
+      <ScrollToTop/>
+        <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/listaDeProductos" element={<ListarProductos />} />
+        <Route path="/producto/:id" element={<DetalleProducto />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/contacto" element={<WorkInProgress />} />
+        <Route path="/quienes" element={<WorkInProgress />} />
+        <Route path="/redes" element={<WorkInProgress />} />
+        <Route path="/ubicacion" element={<WorkInProgress />} />
+        
+        </Routes>
+      </Contenedor>
+      <Footer/>
     </>
   )
 }
 
-export default App
+export default App;
