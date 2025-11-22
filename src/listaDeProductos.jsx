@@ -1,4 +1,4 @@
-import productos from "./data/productos"
+import productos from "./data/productos.js"
 import Card from './Componentes/Card.jsx'
 import Layout from "./Componentes/Layout.jsx"
 

@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import productos from "./data/productos.js";
+import productos from "../data/productos.js";
 
 // Componente para mostrar el detalle de un producto
 function DetalleProducto() {
