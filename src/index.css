@@ -22,16 +22,6 @@
   color: var(--color-primary);
 }
 
-.interpretes{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5rem;
-  padding: 2rem;
-}
-
-body{
-  background-color: rgb(255, 255, 255);
-}
 
 
 

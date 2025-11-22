@@ -6,11 +6,13 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   return (
 
+    // Contenedor principal de la barra de navegación
     <header className="relative w-full bg-[var(--color-secondary)] p-4 shadow-md">
 
+  
 
+      {/* Navegación para pantallas medianas y grandes */} 
     <nav
-    // bg-[var(--colorNavBar)]
       className="hidden md:flex gap-8 text-lg flex-1 justify-center" aria-label="Barra de navegación">
       <Link to="/">Inicio</Link>
       <Link to="/listaDeProductos">Nuestras velas</Link>
@@ -22,7 +24,7 @@ function Navbar() {
     <button onClick={() => setOpen(!open)} className="md:hidden text-2xl" aria-lablel="Menú hamburguesa" 
     aria-expanded={open} aria-controls="menu-movil">☰</button>
 
-    {/* Hace que el menú hamburguesa se vea solo en pantallas pequeñas*/}
+    {/* Configuración para que el menu hamburguesa se vea solamente en pantallas pequeñas*/}
     {/* Le he tenido que configurar z-50 porque cuando abria el menu hamburguesa, me costaba seleccionar las opciones y era porque el menu hamburguesa
     se superponia a las opciones. Esto pone encima del menu las opciones y ya no crea problema de usabilidad */}
     <nav id ="menu-movil" className={`absolute bg-[var(--color-secondary)] top-16 left-0 w-30 flex flex-col p-4 gap-4 md:hidden 

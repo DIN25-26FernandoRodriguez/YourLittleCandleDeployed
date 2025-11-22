@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 
+// Componente Header que incluye el logo y la barra de navegación
 function Header() {
   return (
     <>

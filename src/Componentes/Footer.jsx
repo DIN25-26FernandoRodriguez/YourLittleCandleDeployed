@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Componente Footer que contiene enlaces a redes sociales y ubicación
 function Footer() {
   return (
     <nav

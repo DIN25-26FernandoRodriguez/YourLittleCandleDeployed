@@ -1,5 +1,6 @@
 
-function Contenedor({children}) {
+// Componente Layout que envuelve el contenido principal de la página
+function Layout({children}) {
 
   return (
     <>
@@ -21,4 +22,4 @@ function Contenedor({children}) {
   )
 }
 
-export default Contenedor
+export default Layout

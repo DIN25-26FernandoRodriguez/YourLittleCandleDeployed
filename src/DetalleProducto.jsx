@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import productos from "./data/productos.js";
 
+// Componente para mostrar el detalle de un producto
 function DetalleProducto() {
   const { id } = useParams();
 
@@ -9,7 +10,7 @@ function DetalleProducto() {
 
   // Si no existe, mensaje de error
   if (!product) {
-    return <h1 className="text-center mt-10">Producto no encontrado</h1>;
+    return <h1 className="text-center mt-10">Lo siento, no tenemos ese producto</h1>;
   }
 
   return (
@@ -38,6 +39,7 @@ function DetalleProducto() {
             {product.name}
           </h1>
           <p><strong>{product.price}</strong></p>
+          {/* Botón agregar al carrito */}
           <button
             className="text-white hover:underline pl-8 pr-8  bg-[var(--color-primary)] border-2 border-black p-1 rounded-2xl"
           >
