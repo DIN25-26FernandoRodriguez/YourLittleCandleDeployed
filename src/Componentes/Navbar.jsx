@@ -2,6 +2,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+/**
+ * 
+ * Componente Navbar
+ * 
+ * Componente que va a controlar y mostrar las diferentes páginas que la web contiene
+ * Mediante el Navbar mostraremos al usuario las opciones de navegación que tiene
+ * Se mantendrá siempre a la vista para que el usuario pueda redirigirse en cualquier momento
+ * 
+ * @returns {JSX.Element}
+ */
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (

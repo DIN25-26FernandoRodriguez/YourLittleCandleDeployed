@@ -1,7 +1,15 @@
 import { Link, useParams } from 'react-router-dom';
 import productos from "../data/productos.js";
 
-// Componente para mostrar el detalle de un producto
+/**
+ * 
+ * Componente DetalleProducto
+ * 
+ * Componente que nos va a mostrar toda la información que contiene el producto que seleccionemos
+ * Necesario para cuando en una lista de productos no se muestra toda la información que tiene cada producto almacenada
+ * 
+ * @returns {JSX.Element}
+ */
 function DetalleProducto() {
   const { id } = useParams();
 

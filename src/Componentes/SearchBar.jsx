@@ -1,4 +1,14 @@
 
+/**
+ * 
+ * Componente SearchBar
+ * 
+ * Componente que nos va a permitir filtrar en la lista de productos mediante la palabra que nosotros le indiquemos
+ * en un cuadro de texto
+ * 
+ * @param {*} param0 
+ * @returns {JSX.Element}
+ */
 function SearchBar({ searchTerm, onSearchChange, placeholder = "Buscar..." }) {
     return (
         <div className="mb-8 w-full max-w-lg mx-auto">

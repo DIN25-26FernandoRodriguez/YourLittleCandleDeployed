@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// Componente que hace que al cambiar de ruta, la página se desplace hacia arriba
+/**
+ * 
+ * Componente ScrollToTop
+ * 
+ * Componente que hace que cuando cambiemos de pantalla, el navegador se nos desplace al inicio de la página y no se 
+ * quede bloqueado a la altura que estabamos antes de cambiar de página
+ * 
+ * @returns {JSX.Element}
+ */
 
 export default function ScrollToTop() {
   // Obtener la ubicación actual de la ruta

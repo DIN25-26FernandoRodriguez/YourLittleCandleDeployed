@@ -1,6 +1,14 @@
 import Navbar from "./Navbar";
 
-// Componente Header que incluye el logo y la barra de navegación
+/**
+ * 
+ * Componente Header
+ * 
+ * Componente que va a dar forma a la cabecera de la página web
+ * En ella mostraremos la imagen de la empresa y el componente NavBar donde el usuario podra navegar a través de las ventanas de la página
+ * 
+ * @returns {JSX.Element}
+ */
 function Header() {
   return (
     <>

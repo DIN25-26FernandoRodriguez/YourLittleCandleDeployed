@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+
 export default function Nav() {
 
     // Estado para controlar si el menú está abierto o cerrado
@@ -16,7 +18,6 @@ export default function Nav() {
                 <NavLink to="/listaDeProductos" onClick={() => setOpen(false)}>Nuestras velas</NavLink>
                 <NavLink to="/quienes" onClick={() => setOpen(false)}>Quienes somos</NavLink>
                 <NavLink to="/contacto" onClick={() => setOpen(false)}>Contacto</NavLink>
-
             </nav>
         </>
     );

@@ -1,5 +1,16 @@
 import { useState } from "react";
 
+
+/**
+ * Componente FormularioControlado
+ * 
+ * Formulario controlado para poder añadir productos al catálogo de la página.
+ * Gestiona el estado de cada uno de los campos que el usuario tiene que rellenar para poder crear el producto.
+ * Valida que los campos necesarios esten correctamente rellenados.
+ * 
+ * @component
+ * @returns {JSX.Element}
+ */
 function FormularioControlado() {
 
 

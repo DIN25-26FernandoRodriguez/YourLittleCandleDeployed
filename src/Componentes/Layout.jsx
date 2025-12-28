@@ -1,5 +1,14 @@
 
-// Componente Layout que envuelve el contenido principal de la página
+/**
+ * 
+ * Componente Layout
+ * 
+ * Componente que va a envolver todo el contenido que se va a ver en la pantalla del navegador.
+ * Representa el lienzo donde vamos a dibujar todo lo que queremos que se muestre en la pantalla
+ * 
+ * @param {*} param0 
+ * @returns {JSX.Element}
+ */
 function Layout({children}) {
 
   return (
