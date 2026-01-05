@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
  * @param {image, name, price, to} props 
  * @returns {JSX.Element}
  */
+
 function Card(props) {
     // Desestructuración de las propiedades recibidas
     const { image, name, price, to } = props;
